@@ -3,6 +3,7 @@ function solution(progresses, speeds) {
     let standard = day[0]
     let result=[]
     let cnt = 1
+    
     for(let i = 1; i<day.length; i++){
         if( day[i]<= standard ){
             cnt++
@@ -11,11 +12,12 @@ function solution(progresses, speeds) {
             standard=day[i]
             cnt = 1
         }
+        
         if(i === day.length-1){
             result.push(cnt)
         }
         
     }
-    console.log(day)
+
     return result;
 }
