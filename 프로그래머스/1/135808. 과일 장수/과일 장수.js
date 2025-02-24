@@ -1,7 +1,7 @@
 function solution(k, m, score) {
     let arr = []
-    score.sort((a,b) => b-a)
-    const newScore = score.slice(0,m*Math.floor(score.length/m))
+    
+    const newScore = score.sort((a,b) => b-a).slice(0,m*Math.floor(score.length/m))
 
     for(let i = 0; i < newScore.length; i+=m){
         let box = newScore.slice(i,i+m).sort((a,b) => a-b)
