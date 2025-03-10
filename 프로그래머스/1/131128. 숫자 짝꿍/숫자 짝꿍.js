@@ -12,7 +12,7 @@ function solution(X, Y) {
         }
     }
 
-    if(result.length ===0) return "-1"
-    if(result.join('') === "0".repeat(result.join('').length)) return "0"
+    if(result.length === 0) return "-1"
+    if(+(result.join('')) === 0) return "0"
     return result.join('')
 }
