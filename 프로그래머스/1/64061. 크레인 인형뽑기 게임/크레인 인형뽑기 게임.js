@@ -11,9 +11,7 @@ function solution(board, moves) {
         }
     }
     
-    let cnt = 0
-    let i = 0
-    
+    let cnt = 0, i = 0
     
     while(i< basket.length - 1){
         if(basket[i] === basket[i + 1]){
